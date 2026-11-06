@@ -71,3 +71,5 @@ Keyboard-operable tabs, source inspector with focus trapping/restoration and Esc
 ## Verification
 
 Production TypeScript/Vite build passes. No Lighthouse scores are claimed. No live model integration has been verified without a configured research service.
+
+Browser checks completed: desktop landing/workspace rendering, mobile dossier and graph at 390px, tablet form at 768px, no horizontal overflow in those checked views, graph-source inspector selection, Escape dismissal, End/arrow-key tab navigation, classification filtering, input validation, and honest missing-service errors. Report-schema checks cover all five fictional examples, malformed source data, duplicate source IDs, and unsafe URL schemes. Reduced-motion rules were reviewed in code; OS-level emulation and Lighthouse were not run. Live backend behavior remains unverified without a research service.

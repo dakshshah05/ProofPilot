@@ -109,7 +109,7 @@ export default function App() {
   const [notice, setNotice] = useState("");
   const [running, setRunning] = useState(false);
   const [progress, setProgress] = useState({
-    stage: "Understanding",
+    stage: "Connecting",
     completed: [] as string[],
     message: "Waiting for the research service to acknowledge the request.",
   });
@@ -166,7 +166,7 @@ export default function App() {
     controller.current = abort;
     setRunning(true);
     setProgress({
-      stage: "Understanding",
+      stage: "Connecting",
       completed: [],
       message: "Request sent. Waiting for the research service.",
     });
@@ -272,6 +272,7 @@ export default function App() {
         </button>
         <button
           className="button primary new-button"
+          aria-label="New investigation"
           onClick={() => navigate("new")}
         >
           <Plus size={18} />
