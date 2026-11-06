@@ -1,0 +1,25 @@
+ProofPilot AI
+BharatCode Build League submission
+
+Repository: https://github.com/dakshshah05/ProofPilot
+
+An evidence-first research interface with a cinematic landing page,
+responsive workspace, interactive evidence graph, source inspector,
+and exportable Evidence Passport.
+
+Try it locally:
+1. Install Node.js 20.19+ (or Node.js 22.12+).
+2. Clone this repository.
+3. Run npm ci
+4. Run npm run dev
+5. Open the URL printed by Vite.
+6. Choose Open workspace, then Explore the investigation.
+
+Current scope:
+The interface and research-service client are implemented. Five clearly
+labeled fictional examples let reviewers explore the experience without
+API credentials. A real research backend must be connected in Settings
+for live investigations. No fictional evidence is presented as real research.
+
+The existing hosted preview is owner-private, not a public community demo.
+See README.md for setup, architecture, verification, and the backend contract.

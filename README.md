@@ -1,5 +1,9 @@
 # ProofPilot AI
 
+[BharatCode submission](BharatCode.txt) · [GitHub repository](https://github.com/dakshshah05/ProofPilot)
+
+Clone with `git clone https://github.com/dakshshah05/ProofPilot.git`, then `cd ProofPilot` and follow the run instructions below. The hosted Sites preview is owner-private; use the local setup to try the project.
+
 A responsive evidence-first React application with a cinematic landing page, local research workspace, React Flow evidence graph, source inspector, streaming progress UI, and printable Evidence Passport.
 
 ## Run
@@ -14,7 +18,7 @@ Node 20.19+ recommended. Built with React, TypeScript, Vite, Tailwind CSS, Motio
 
 ## Current scope
 
-This repository implements the interface and research-service client. It does **not** contain a live AI research engine. Demo evidence is fictional and clearly labeled. Demo cases never populate live statistics. Reports are stored in localStorage in this browser, not a shared cloud account. No API keys are included. There is no GitHub link because no repository URL was supplied.
+This repository implements the interface and research-service client. It does **not** contain a live AI research engine. Demo evidence is fictional and clearly labeled. Demo cases never populate live statistics. Reports are stored in localStorage in this browser, not a shared cloud account. No API keys are included.
 
 Configure a research endpoint in Settings to enable live investigations. Use HTTPS outside localhost. Claims are sent only on submission. Provider API keys must remain on your service. The service must allow the application origin through CORS, handle authentication as appropriate, retrieve real source passages, and generate validated reports. HTTP errors, malformed responses, connection failures, timeout, and explicit service errors are shown without fabricated success. Stop waiting aborts the client request; it does not guarantee remote cancellation.
 
@@ -73,3 +77,4 @@ Keyboard-operable tabs, source inspector with focus trapping/restoration and Esc
 Production TypeScript/Vite build passes. No Lighthouse scores are claimed. No live model integration has been verified without a configured research service.
 
 Browser checks completed: desktop landing/workspace rendering, mobile dossier and graph at 390px, tablet form at 768px, no horizontal overflow in those checked views, graph-source inspector selection, Escape dismissal, End/arrow-key tab navigation, classification filtering, input validation, and honest missing-service errors. Report-schema checks cover all five fictional examples, malformed source data, duplicate source IDs, and unsafe URL schemes. Reduced-motion rules were reviewed in code; OS-level emulation and Lighthouse were not run. Live backend behavior remains unverified without a research service.
+
